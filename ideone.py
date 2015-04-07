@@ -71,7 +71,7 @@ if len(sys.argv) < 2:
 lang  = sys.argv[1]
 print "Paste: and CTRL+D to End the paste..."
 paste = sys.stdin.read()
-i = Ideone('awesomepaste', '9878783904')
+i = Ideone('username', 'APIKey')
 res = i.create_submission(paste, lang)
 link = res['link']
 print "http://www.ideone.com/" + link
